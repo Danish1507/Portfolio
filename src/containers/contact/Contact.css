@@ -1,0 +1,93 @@
+.contact-div-main {
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: space-between; /* Space out elements */
+}
+
+.contact-title {
+  font-size: 65px;
+  font-weight: 400;
+}
+
+.contact-detail,
+.contact-detail-email {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #868e96;
+  text-decoration: none;
+}
+
+.contact-detail:hover,
+.contact-detail-email:hover {
+  color: black;
+  text-shadow: 2px 1px 2px #b5b5b5;
+  transition: all 0.3s;
+}
+
+.contact-subtitle {
+  text-transform: uppercase;
+}
+
+.contact-text-div {
+  margin-top: 1.5rem;
+}
+
+.contact-margin-top {
+  margin-top: 4rem;
+}
+
+.contact-image-div {
+  flex-shrink: 0;
+  width: 200px; /* Fixed width for card-like appearance */
+  height: 150px; /* Fixed height */
+  overflow: hidden; /* Hide overflow */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center image vertically */
+  justify-content: center; /* Center image horizontally */
+}
+
+
+.contact-image-div > img {
+  width: 50%; /* Fill the container's width */
+  height: 50%; /* Fill the container's height */
+  /* object-fit: cover; Cover the container */
+  object-position: left; /* Align image to the left */
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .contact-title {
+    font-size: 56px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .contact-subtitle {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .contact-text-div {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .contact-detail,
+  .contact-detail-email {
+    font-size: 20px;
+  }
+
+  .contact-image-div {
+    display: none; /* Hide image on smaller screens */
+  }
+}
